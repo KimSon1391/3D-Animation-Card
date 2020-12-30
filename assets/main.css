@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card{
+    transform-style: preserve-3d;
+    width: 30rem;
+    min-height: 80vh;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2) ;
+    border-radius: 40px;
+    padding: 0 5rem;
+}
+
+.logo{
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle{
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    background: linear-gradient(to right, rgb(207, 58, 54,0.75) , rgb(9, 89, 167, 0.75));
+    position: absolute;
+    z-index: 1;
+}
+
+.logo img{
+    width: 20rem;
+    z-index: 2;
+    transition: all 0.5s ease-out;
+}
+
+.info h1{
+    font-size: 3rem;
+    text-align: center;
+    transition:  all 0.5s ease-out;
+}
+
+.info h3{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin: 2rem 0; 
+    text-align: center;
+    color: #585858;
+    transition:  all 0.5s ease-out;
+}
+
+.size{
+    display: flex;
+    justify-content: space-between;
+    transition:  all 0.5s ease-out;
+}
+
+.size button{
+    background: none;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+}
+
+button.active{
+    background-color: #585858;
+    color: white;
+}
+
+.purchase{
+    margin-top: 3.5rem;
+}
+
+.purchase button{
+    width: 100%;
+    border: none;
+    background-color:  rgb(207, 58, 54,0.75);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 1rem 0;
+    border-radius: 40px;
+    color: white;
+    font-weight: bold;
+    transition:  all 0.5s ease-out;
+}
